@@ -74,8 +74,8 @@ const HeaderLayout = (props) => {
                     <li key={idx} className={`nav nav_${idx + 1}`}>
                       <Link to={
                         idx === 0
-                        ? `/` 
-                        : `/sub/${target}`
+                        ? `./main/main` 
+                        : `./sub/${target}`
                         } className="cursor_s">
                         {target}
                       </Link>
