@@ -23,7 +23,7 @@ const route = (props) => {
           <Routes>
             {/* 메인페이지 */}
             <Route
-              path="./main/Main"
+              path="/"
               element={
                 <Main
                   authToken={props.authToken}
@@ -35,7 +35,7 @@ const route = (props) => {
 
             {/* 서브페이지 */}
             <Route
-              path="./sub/Works"
+              path="/sub/Works"
               element={
                 <Works
                   authToken={props.authToken}
@@ -45,7 +45,7 @@ const route = (props) => {
               }
             />
             <Route
-              path="./sub/About"
+              path="/sub/About"
               element={
                 <About
                   authToken={props.authToken}
