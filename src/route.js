@@ -23,7 +23,7 @@ const route = (props) => {
           <Routes>
             {/* 메인페이지 */}
             <Route
-              path="./main/main"
+              path="./main/Main"
               element={
                 <Main
                   authToken={props.authToken}
