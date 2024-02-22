@@ -10,11 +10,11 @@ const HeaderLayout = (props) => {
   useEffect(() => {
     setMenuOpen(false);
 
-    let page = document.getElementById('wrap');
-    console.log(page.className);
-    page.className === 'main'
-    ? setWhiteBlack('W')
-    : setWhiteBlack('B')
+    // let page = document.getElementById('wrap');
+    // console.log(page.className);
+    // page.className === 'main'
+    // ? setWhiteBlack('W')
+    // : setWhiteBlack('B')
   }, [pathname]);
 
   return (
