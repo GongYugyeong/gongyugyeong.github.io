@@ -22,7 +22,7 @@ const FooterLayout = (props) => {
           <div className="cont_box">
             <div className="top_btn_box">
               <button type="button" className="top_btn cursor_s" onClick={handleTop}>
-                <img src="/assets/images/top_btn.png" alt="" />
+                <img src="%PUBLIC_URL%/assets/images/top_btn.png" alt="" />
               </button>
             </div>
             <div className="cont_info_box">
@@ -34,8 +34,8 @@ const FooterLayout = (props) => {
                         <li key={idx} id={idx} className="m_btn poppins">
                           <Link to={
                         idx === 0
-                        ? `/` 
-                        : `/sub/${target}`
+                        ? `%PUBLIC_URL%/` 
+                        : `%PUBLIC_URL%/sub/${target}`
                         } className="cursor_s">
                         {target}
                       </Link>

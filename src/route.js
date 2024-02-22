@@ -23,7 +23,7 @@ const route = (props) => {
           <Routes>
             {/* 메인페이지 */}
             <Route
-              path="/"
+              path="%PUBLIC_URL%/"
               element={
                 <Main
                   authToken={props.authToken}
@@ -35,7 +35,7 @@ const route = (props) => {
 
             {/* 서브페이지 */}
             <Route
-              path="/sub/Works"
+              path="%PUBLIC_URL%/sub/Works"
               element={
                 <Works
                   authToken={props.authToken}
@@ -45,39 +45,9 @@ const route = (props) => {
               }
             />
             <Route
-              path="/sub/About"
+              path="%PUBLIC_URL%/sub/About"
               element={
                 <About
-                  authToken={props.authToken}
-                  userInfo={props.userInfo}
-                  gnb={props.gnb}
-                />
-              }
-            />
-            <Route
-              path="/sub/Story"
-              element={
-                <Story
-                  authToken={props.authToken}
-                  userInfo={props.userInfo}
-                  gnb={props.gnb}
-                />
-              }
-            />
-            <Route
-              path="/sub/Career"
-              element={
-                <Career
-                  authToken={props.authToken}
-                  userInfo={props.userInfo}
-                  gnb={props.gnb}
-                />
-              }
-            />
-            <Route
-              path="/sub/Inquire"
-              element={
-                <Inquire
                   authToken={props.authToken}
                   userInfo={props.userInfo}
                   gnb={props.gnb}
