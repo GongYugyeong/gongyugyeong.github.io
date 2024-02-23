@@ -24,30 +24,30 @@ const Main = (props) => {
   ]);
   const mainWork = [
     {
-      title: "Korean Air<br />Aerospace",
+      title: "Korean Air Aerospace",
       subtitle: "[React,Redux toolkit]<br />대한항공 항공우주사업본부(부분리뉴얼)",
-      src: "SDNEWSROOM.mp4",
+      src: "mainWorkImg1.png",
       award: "",
     },
     {
-      title: "SAMSUNG DISPLAY<br />NEWSROOM",
+      title: "SAMSUNG DISPLAY NEWSROOM",
       subtitle: "[HTML,CSS,Javascript,Ajax]<br />SAMSUNG DISPLAY NEWSROOM(전체리뉴얼)",
-      src: "SDNEWSROOM.mp4",
+      src: "mainWorkImg2.png",
       award: "",
     },
     {
-      title: "COLEO<br />MARKETING<br />GRUOP",
+      title: "COLEO MARKETING GRUOP",
       subtitle: "[GSAP,HTML,CSS,Javascript]<br />COLEO MARKETING GROUP(구축)",
-      src: "COLEO.mp4",
+      src: "mainWorkImg3.png",
       award: [
         { icon: "web_award_icon01.png" },
         { icon: "web_award_icon02.png" },
       ],
     },
     {
-      title: "LG R1<br />Compressor<sup>TM</sup>",
+      title: "LG R1 Compressor<sup>TM</sup>",
       subtitle: "[GSAP,HTML,CSS,Javascript]<br />LG R1 Compressor<sup>TM</sup>(구축)",
-      src: "R1.mp4",
+      src: "mainWorkImg4.png",
       award: [{ icon: "web_award_icon02.png" }],
     },
   ];
@@ -144,7 +144,6 @@ const Main = (props) => {
                 <div
                   key={idx}
                   className={`cont_box box0${idx + 1}`}
-                  
                 >
                   <div className={`work_box work_0${idx + 1}`}>
                     <div className="work_title">

@@ -4,6 +4,8 @@ import Route from "./route";
 
 import ScrollToTop from "./ScrollToTop";
 
+// import './assets/scss/reset.scss';
+
 function App() {
   const [authToken, setAuthToken] = useState("234njkbdsub3qwhjbahw");
   const userInfo = {
