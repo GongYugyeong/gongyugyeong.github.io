@@ -10,11 +10,8 @@ const HeaderLayout = (props) => {
   useEffect(() => {
     setMenuOpen(false);
 
-    // let page = document.getElementById('wrap');
-    // console.log(page.className);
-    // page.className === 'main'
-    // ? setWhiteBlack('W')
-    // : setWhiteBlack('B')
+    let page = document.getElementById('wrap');
+    console.log(page.className);
   }, [pathname]);
 
   return (
@@ -74,8 +71,8 @@ const HeaderLayout = (props) => {
                     <li key={idx} className={`nav nav_${idx + 1}`}>
                       <Link to={
                         idx === 0
-                        ? `%PUBLIC_URL%/main/main` 
-                        : `%PUBLIC_URL%/sub/${target}`
+                        ? `/portfoliooo/` 
+                        : `/portfoliooo/sub/${target}`
                         } className="cursor_s">
                         {target}
                       </Link>
@@ -83,21 +80,6 @@ const HeaderLayout = (props) => {
                   );
                 })}
             </ul>
-            {/* <div className="dw_box cursor_s">
-              <Link href="/assets/pdf/" target="_blank">
-                <span>회사소개서 다운로드</span>
-                <img
-                  className="wh"
-                  src="./assets/images/down_icon_w.png"
-                  alt=""
-                />
-                <img
-                  className="gr"
-                  src="./assets/images/down_icon_g.png"
-                  alt=""
-                />
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>

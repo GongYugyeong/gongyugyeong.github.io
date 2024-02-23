@@ -85,7 +85,7 @@ const Main = (props) => {
               </div>
             </div>
             <p className="row_arrow">
-              <img src="/assets/images/row.png" alt="row" />
+              <img src="/portfoliooo/assets/images/row.png" alt="row" />
             </p>
           </div>
         </div>
@@ -164,7 +164,7 @@ const Main = (props) => {
                                 return (
                                   <img
                                     key={awardIdx}
-                                    src={`/assets/images/${awardName.icon}`}
+                                    src={`/portfoliooo/assets/images/${awardName.icon}`}
                                     alt={awardName.icon}
                                   />
                                 );
@@ -172,7 +172,7 @@ const Main = (props) => {
                           </div>
                         ) : null}
                         <img
-                          src={`/assets/images/${target.src}`}
+                          src={`/portfoliooo/assets/images/${target.src}`}
                           alt={target.subtitle}
                         />
                       </div>
@@ -187,47 +187,6 @@ const Main = (props) => {
             })}
         </div>
       </div>
-      {/* <div id="sec04" className="section4 section">
-        <div className="black_bg"></div>
-        <div className="cont_wrap">
-          <div className="cont_box">
-            <div className="top_cont">
-              <p className="sub_text">
-                {userInfo.userNameKo}와 함께한 다양한 프로젝트들을
-                만나보세요.
-              </p>
-              <Link to="/sub/Works" className="go_work_btn">
-                <span className="text">ALL PROJECTS</span>
-                <span className="arr"></span>
-                <span className="under"></span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="sec05" className="section5 section">
-        <div className="cont_wrap">
-          <div className="cont_bg"></div>
-          <div className="cont_box">
-            <div className="title_box">
-              <p className="main_s_text poppins">JOIN OUR TEAM!</p>
-              <p className="main_title pretendard">
-                {userInfo.userNameKo}는 열정을 가진 인재들을
-                <br />
-                언제나 환영합니다.
-              </p>
-              <div className="go_career">
-                <Link
-                  to="/sub/Career"
-                  className="go_career_btn cursor_s pretendard hover_motion"
-                >
-                  지원하기
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

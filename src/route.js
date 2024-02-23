@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 // import './assets/scss/style.scss';
 
 import NotFound from "./NotFound";
@@ -7,9 +7,6 @@ import FooterLayout from "./layouts/FooterLayout";
 import Main from "./main/Main";
 import Works from "./sub/Works";
 import About from "./sub/About";
-import Story from "./sub/Story";
-import Career from "./sub/Career";
-import Inquire from "./sub/Inquire";
 
 const route = (props) => {
   return (
@@ -23,7 +20,7 @@ const route = (props) => {
           <Routes>
             {/* 메인페이지 */}
             <Route
-              path="%PUBLIC_URL%/"
+              path="/portfoliooo/"
               element={
                 <Main
                   authToken={props.authToken}
@@ -35,7 +32,7 @@ const route = (props) => {
 
             {/* 서브페이지 */}
             <Route
-              path="%PUBLIC_URL%/sub/Works"
+              path="/portfoliooo/sub/Works"
               element={
                 <Works
                   authToken={props.authToken}
@@ -45,7 +42,7 @@ const route = (props) => {
               }
             />
             <Route
-              path="%PUBLIC_URL%/sub/About"
+              path="/portfoliooo/sub/About"
               element={
                 <About
                   authToken={props.authToken}
@@ -67,35 +64,6 @@ const route = (props) => {
           {/* footer 영역 */}
           <FooterLayout userInfo={props.userInfo} gnb={props.gnb} />
         </div>
-        {/* <div className="award_banner">
-          <Link to="https://naward.or.kr/winners/2022" target="_blank">
-            <img
-              src="./assets/images/and_award_banner.png"
-              alt=""
-              className="cursor_s"
-            />
-          </Link>
-          <Link
-            to="http://www.i-award.or.kr/Web/Prize/Default.aspx"
-            target="_blank"
-          >
-            <img
-              src="./assets/images/web_award_banner.png"
-              alt=""
-              className="cursor_s"
-            />
-          </Link>
-          <Link
-            to="http://ictawardkorea.com/htm/2022?sca=%EC%9D%80%EC%83%81+%EC%A0%95%EB%B3%B4%EA%B3%BC%ED%95%99%EC%A7%84%ED%9D%A5%ED%98%91%ED%9A%8C+%EC%9D%B4%EC%82%AC%EC%9E%A5%EC%83%81"
-            target="_blank"
-          >
-            <img
-              src="./assets/images/award_banner.png"
-              alt=""
-              className="cursor_s"
-            />
-          </Link>
-        </div> */}
       </div>
     </>
   );

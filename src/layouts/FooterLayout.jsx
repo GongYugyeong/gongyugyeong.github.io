@@ -22,7 +22,7 @@ const FooterLayout = (props) => {
           <div className="cont_box">
             <div className="top_btn_box">
               <button type="button" className="top_btn cursor_s" onClick={handleTop}>
-                <img src="%PUBLIC_URL%/assets/images/top_btn.png" alt="" />
+                <img src="/portfoliooo/assets/images/top_btn.png" alt="" />
               </button>
             </div>
             <div className="cont_info_box">
@@ -34,8 +34,8 @@ const FooterLayout = (props) => {
                         <li key={idx} id={idx} className="m_btn poppins">
                           <Link to={
                         idx === 0
-                        ? `%PUBLIC_URL%/` 
-                        : `%PUBLIC_URL%/sub/${target}`
+                        ? `/portfoliooo/` 
+                        : `/portfoliooo/sub/${target}`
                         } className="cursor_s">
                         {target}
                       </Link>
@@ -53,20 +53,6 @@ const FooterLayout = (props) => {
                   <p className="poppins tp_title">Tel</p>
                   <p className="pretendard tel">{userInfo.userTel}</p>
                 </div>
-                {/* <div className="info_dw">
-                  <Link
-                    to="/assets/pdf/"
-                    arget="_blank"
-                    className="cursor_s dw_btn"
-                  >
-                    <span className="dw_text pretendard">
-                      회사소개서 다운로드
-                    </span>
-                    <span className="dw_icon">
-                      <img src="/assets/images/down_icon.png" alt="다운로드" />
-                    </span>
-                  </Link>
-                </div> */}
               </div>
             </div>
             <div className="copy_box">

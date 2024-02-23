@@ -107,7 +107,7 @@ const About = (props) => {
                         </p>
                         <p className="aw_img">
                           <img
-                            src={`/assets/images/${target.src}`}
+                            src={`/portfoliooo/assets/images/${target.src}`}
                             alt={target.alt}
                           />
                         </p>
