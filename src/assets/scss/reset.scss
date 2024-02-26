@@ -1,95 +1,134 @@
+@charset "utf-8";
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "DNFBitBitv2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype");
+}
+
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HakgyoansimWoojuR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JalnanGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline-style: none;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline-style: none;
+  box-sizing: border-box;
 }
 html {
-	-webkit-tap-highlight-color: transparent !important;
-	-webkit-text-size-adjust: none;
-	-webkit-appearance: none;
-	overflow-x: hidden;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+  overflow-x: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
 }
 body {
-	min-width: 320px;
-	font-family: 'JalnanGothic', "DNFBitBitv2", "HakgyoansimWoojuR", "Pretendard", "FSSiena", sans-serif;
+  min-width: 320px;
+  font-family: "JalnanGothic", "DNFBitBitv2", "HakgyoansimWoojuR", "Pretendard",
+    "FSSiena", sans-serif;
 }
-ol,ul,li {
-	list-style: none;
+ol,
+ul,
+li {
+  list-style: none;
 }
-table,th,td {
-	border-collapse: collapse;
+table,
+th,
+td {
+  border-collapse: collapse;
 }
 input {
-	-webkit-appearance: none;
-	-webkit-border-radius: 0;
-	border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
-input[type=text]::-ms-clear, 
-input[type=tel]::-ms-clear {
-	display: none;
+input[type="text"]::-ms-clear,
+input[type="tel"]::-ms-clear {
+  display: none;
 }
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	&::-ms-expand {
-		display: none;
-	}
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
 }
 button {
-	border: none;
-	background: none;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	background: none;
-	-webkit-transform: translate3d(0,0,0);
-	outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  outline: none;
 }
 label {
-	cursor: pointer;
-	img {
-		pointer-events: none;
-	}
+  cursor: pointer;
+  img {
+    pointer-events: none;
+  }
 }
 a {
-	text-decoration: none;
-	color: #242424;
+  text-decoration: none;
+  color: #242424;
 }
 img {
-	display: block;
-	border: 0;
-	width: 100%;
+  display: block;
+  border: 0;
+  width: 100%;
 }
 .ir_text {
-	overflow: hidden;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
-	clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .clearfix {
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
-		height: 0;
-		visibility: visible;
-	}
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: visible;
+  }
 }
 .bl_txt {
-	font-weight: bold;
+  font-weight: bold;
 }
 .scrollDisable {
-	height: 100%;
-	min-height: 100%;
-	overflow: hidden !important;
-	touch-action: none;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden !important;
+  touch-action: none;
 }

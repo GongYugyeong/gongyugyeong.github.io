@@ -4,13 +4,13 @@ import { Link, useLocation } from "react-router-dom";
 const HeaderLayout = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [gnb, setMenu] = useState(props.gnb);
-  const [WhiteBlack, setWhiteBlack] = useState('W');
+  const [WhiteBlack, setWhiteBlack] = useState("W");
   const { pathname } = useLocation();
 
   useEffect(() => {
     setMenuOpen(false);
 
-    let page = document.getElementById('wrap');
+    let page = document.getElementById("wrap");
     console.log(page.className);
   }, [pathname]);
 
@@ -29,13 +29,12 @@ const HeaderLayout = (props) => {
             </div>
           </div>
         </div>
-        <div id='brochure' className="right">
+        <div id="brochure" className="right">
           <div className="brochure">
             <Link
               to="https://yugyeong.notion.site/5dd708e317324ca7a78ccdaa9d91db2a?pvs=4"
               target="_blank"
-              className="dw_btn pretendard cursor_s"
-            >
+              className="dw_btn pretendard cursor_s">
               Notion
             </Link>
             <span className="border_w"></span>
@@ -43,8 +42,7 @@ const HeaderLayout = (props) => {
             <Link
               to="https://yugyeong.notion.site/5dd708e317324ca7a78ccdaa9d91db2a?pvs=4"
               target="_blank"
-              className="dw_btn on pretendard cursor_s"
-            >
+              className="dw_btn on pretendard cursor_s">
               Notion
             </Link>
           </div>
@@ -54,8 +52,7 @@ const HeaderLayout = (props) => {
               className={`menu_btn cursor_s ${menuOpen ? "on" : ""}`}
               onClick={(e) => {
                 setMenuOpen(!menuOpen);
-              }}
-            >
+              }}>
               <span className="bar bar_1"></span>
               <span className="bar bar_2"></span>
               <span className="bar bar_3"></span>
@@ -69,11 +66,13 @@ const HeaderLayout = (props) => {
                 gnb.map((target, idx) => {
                   return (
                     <li key={idx} className={`nav nav_${idx + 1}`}>
-                      <Link to={
-                        idx === 0
-                        ? `/portfoliooo/` 
-                        : `/portfoliooo/sub/${target}`
-                        } className="cursor_s">
+                      <Link
+                        to={
+                          idx === 0
+                            ? `/portfoliooo/`
+                            : `/portfoliooo/sub/${target}`
+                        }
+                        className="cursor_s">
                         {target}
                       </Link>
                     </li>

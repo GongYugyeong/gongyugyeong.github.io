@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-// import './assets/scss/style.scss';
 
 import NotFound from "./NotFound";
 import HeaderLayout from "./layouts/HeaderLayout";

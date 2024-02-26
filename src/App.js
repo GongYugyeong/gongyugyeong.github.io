@@ -4,7 +4,8 @@ import Route from "./route";
 
 import ScrollToTop from "./ScrollToTop";
 
-// import './assets/scss/reset.scss';
+import "./assets/scss/reset.scss";
+import "./assets/scss/style.scss";
 
 function App() {
   const [authToken, setAuthToken] = useState("234njkbdsub3qwhjbahw");
@@ -14,11 +15,7 @@ function App() {
     userEmail: "yugyeong0917@naver.com",
     userTel: "+82-10-2907-0917",
   };
-  const [gnb, setGnb] = useState([
-    "Home",
-    "About",
-    "Works"
-  ]);
+  const [gnb, setGnb] = useState(["Home", "About", "Works"]);
 
   return (
     <BrowserRouter>

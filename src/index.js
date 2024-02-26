@@ -1,21 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom"; // react v17 버전용
+// import ReactDOM from 'react-dom/client';  // react v18 버전용
+
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
 // redux 사용을 위해 Provider와 store추가
 import { Provider } from "react-redux";
 import { persistor, store } from "./store/store";
-import { PersistGate } from 'redux-persist/integration/react';
+import { PersistGate } from "redux-persist/integration/react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <App />
     </PersistGate>
   </Provider>,
+  document.getElementById("root")
 );
+
+// react v18 버전용
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <Provider store={store}>
+//     <PersistGate loading={null} persistor={persistor}>
+//       <App />
+//     </PersistGate>
+//   </Provider>,
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

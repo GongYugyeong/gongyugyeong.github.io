@@ -40,7 +40,7 @@ const Works = (props) => {
 
   return (
     <div id="wrap" className="works">
-      <div id="sec01" className="section1 section">
+      <section id="sec01" className="section">
         <div className="cont_wrap">
           <div className="cont_box">
             <div className="title_box">
@@ -76,7 +76,7 @@ const Works = (props) => {
             )}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

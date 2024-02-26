@@ -8,12 +8,13 @@ const FooterLayout = (props) => {
   // toUpperCase() 대문자 변환
   // toLowerCase() 소문자 변환
 
-  const handleTop = () => {  // 클릭하면 스크롤이 위로 올라가는 함수
+  const handleTop = () => {
+    // 클릭하면 스크롤이 위로 올라가는 함수
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
-  }
+  };
 
   return (
     <footer>
@@ -21,7 +22,10 @@ const FooterLayout = (props) => {
         <div className="cont_wrap">
           <div className="cont_box">
             <div className="top_btn_box">
-              <button type="button" className="top_btn cursor_s" onClick={handleTop}>
+              <button
+                type="button"
+                className="top_btn cursor_s"
+                onClick={handleTop}>
                 <img src="/portfoliooo/assets/images/top_btn.png" alt="" />
               </button>
             </div>
@@ -32,13 +36,15 @@ const FooterLayout = (props) => {
                     gnb.map((target, idx) => {
                       return (
                         <li key={idx} id={idx} className="m_btn poppins">
-                          <Link to={
-                        idx === 0
-                        ? `/portfoliooo/` 
-                        : `/portfoliooo/sub/${target}`
-                        } className="cursor_s">
-                        {target}
-                      </Link>
+                          <Link
+                            to={
+                              idx === 0
+                                ? `/portfoliooo/`
+                                : `/portfoliooo/sub/${target}`
+                            }
+                            className="cursor_s">
+                            {target}
+                          </Link>
                         </li>
                       );
                     })}
@@ -57,7 +63,9 @@ const FooterLayout = (props) => {
             </div>
             <div className="copy_box">
               <div className="pretendard">
-                <p className="copy_text copyright">COPYRIGHT {userInfo.userNameEn}. ALL RIGHTS RESERVED.</p>
+                <p className="copy_text copyright">
+                  COPYRIGHT {userInfo.userNameEn}. ALL RIGHTS RESERVED.
+                </p>
               </div>
             </div>
           </div>
