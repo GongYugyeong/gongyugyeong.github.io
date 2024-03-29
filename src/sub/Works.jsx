@@ -15,18 +15,12 @@ const Works = (props) => {
 
   useEffect(() => {
     console.log(selectType);
-    let _data = {
-      select_type: selectType,
-      limit_cnt: limitCnt,
-      last_num: lastNum,
-      auth_token: auth_token,
-    };
-    // axios
-    //   .post("http://www.pitapat.net/src/works_list.php", _data)
-    //   .then((res) => {
-
-    //   })
-    //   .catch();
+    axios
+      .get("http://localhost:3000/portfoliooo/data/worksList.json")
+      .then((res) => {
+        alert(res)
+      })
+      .catch();
   }, [selectType]);
 
   const worksList = (e) => {
@@ -36,6 +30,8 @@ const Works = (props) => {
     });
     setSelectType(e.target.dataset.year);
     e.target.classList.add('on');
+
+
   }
 
   return (

@@ -129,8 +129,8 @@ const Main = (props) => {
             mainWork.map((target, idx) => {
               return (
                 <div key={idx} className={`cont_box box0${idx + 1}`}>
-                  <Link to={target.link} target={'_blank'}>
                     <div className={`work_box work_0${idx + 1}`}>
+                  <Link to={target.link} target={'_blank'}>
                       <div className="work_title">
                         <div className="work_title_wrap">
                           <p
@@ -167,8 +167,8 @@ const Main = (props) => {
                             __html: target.subtitle,
                           }}></p>
                       </div>
-                    </div>
                   </Link>
+                    </div>
                 </div>
               );
             })}
