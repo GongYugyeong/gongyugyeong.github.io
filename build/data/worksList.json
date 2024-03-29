@@ -1,6 +1,6 @@
 [
   {
-    "data": [
+    "data1": [
       {
         "title": "대한항공 항공우주사업본부",
         "image": "",
@@ -13,6 +13,19 @@
         "discription": "메인 페이지, 본부역사 페이지, 신사업 메뉴 내 모든 페이지 리뉴얼 작업"
       },
       {
+        "title": "TMS 자체솔루션",
+        "image": "",
+        "working": "3M",
+        "webtype": "적응형",
+        "year": "2023",
+        "date": "2023.01 ~ 2023.02",
+        "language": "HTML, SCSS, React, React-Redux, TypeScript, axios",
+        "link": "#",
+        "discription": "리액트 기반 UX라이팅 사전페이지"
+      }
+    ],
+    "data2": [
+      {
         "title": "대한항공 항공우주사업본부",
         "image": "",
         "working": "2M",
@@ -22,6 +35,17 @@
         "language": "React, React-Redux, TypeScript, axios",
         "link": "https://aerospace.koreanair.com/main",
         "discription": "메인 페이지, 본부역사 페이지, 신사업 메뉴 내 모든 페이지 리뉴얼 작업"
+      },
+      {
+        "title": "TMS 자체솔루션",
+        "image": "",
+        "working": "3M",
+        "webtype": "적응형",
+        "year": "2023",
+        "date": "2023.01 ~ 2023.02",
+        "language": "HTML, SCSS, React, React-Redux, TypeScript, axios",
+        "link": "#",
+        "discription": "리액트 기반 UX라이팅 사전페이지"
       }
     ]
   }

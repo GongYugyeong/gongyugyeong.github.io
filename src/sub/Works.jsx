@@ -16,9 +16,9 @@ const Works = (props) => {
   useEffect(() => {
     console.log(selectType);
     axios
-      .get("http://localhost:3000/portfoliooo/data/worksList.json")
+      .get("/portfoliooo/data/worksList.json")
       .then((res) => {
-        alert(res)
+        alert(res.data)
       })
       .catch();
   }, [selectType]);
